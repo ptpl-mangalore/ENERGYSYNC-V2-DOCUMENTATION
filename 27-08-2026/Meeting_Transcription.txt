@@ -5,7 +5,8 @@ Key Takeaways
 Problem: 
 The current ERP research is biased, relying on flawed summaries (e.g., Oracle is "finance-centric") instead of analyzing granular features. This risks missing critical functionality.
 Solution: 
-Adopt a two-phase process: 1) Broadly collect all features from all competitors, then 2) Use that comprehensive baseline to deep-dive into specific features and filter for "must-haves."
+Adopt a two-phase process: 1) Broadly collect all features from all competitors, then 
+                           2) Use that comprehensive baseline to deep-dive into specific features and filter for "must-haves."
 Goal: 
 Create a modular ERP architecture. This requires analyzing competitors' modularity and compatibility to build a system that can plug into existing client infrastructure (e.g., SAP).
 Topics
