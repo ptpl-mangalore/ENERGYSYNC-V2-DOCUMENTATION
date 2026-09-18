@@ -1,0 +1,63 @@
+ ERP Research Methodology
+
+- Core principle: approach the new ERP design with zero bias from the existing system
+  - Risk of referencing current ERP: end up building a replica with only 20% difference
+  - Goal is a fresh, market-benchmarked product, not a clone
+- Agreed product split: 80% core product, 10% configuration, 10% customization
+  - Rigid per-client customization is unsustainable and blocks selling to new clients
+- Research process confirmed:
+  1. Market research (multi-iteration, AI-assisted)
+  2. Analysis
+  3. Business Requirement Document (BRD)
+  4. Functional Requirement Document (FRD)
+  5. Prototype
+  6. Fundamental test cases
+- 5W1H framework in use: What, Why, Where, Who, When, then How last
+  - “How” instinct is the failure mode: jumping to solutions before analysis
+  - Spending time on the Ws keeps the whole team aligned before implementation begins
+
+ 20 Modules and Prioritization
+
+- Team identified 20 modules through unbiased research using the 5W1H principles:
+  - Finance and Accounting, Controlling and Cost Management, Budget Management
+  - Purchase/Procurement, Vendor Management
+  - Inventory/Stores/Warehouse Management
+  - Sales and Distribution, CRM, HRMS
+  - Asset Management, Maintenance Management, Project Management
+  - Manufacturing/Production Management, Quality Management
+  - Supply Chain and Logistics, Contract Management
+  - Customer Service and Help Desk
+  - MIS/BI Dashboard, Administration/Workflow/Security/Integration
+- Each module has 7-8+ sub-modules documented (Finance and Accounting alone has 20+)
+- Next step: apply a weighted scoring mechanism to prioritize modules
+  - Score determines Phase 1 vs. Phase 2 scope
+  - Avoids deep-diving into modules that won’t be built in Phase 1
+  - Do not compare against the existing ERP yet: bias will creep in and distort priorities
+- “Who” dimension needs more depth in the next exercise
+  - Roles vs. users must be clearly separated
+  - Roles determine feature access, read/write permissions, and workflow inclusion
+- Vendor Management flagged as highest-priority new build
+  - Study GEM portal (government procurement marketplace) for shaping this module
+  - KYC, verification APIs already exist in the market: evaluate build vs. buy
+  - Same build-vs-buy logic applies broadly: don’t reinvent where plug-and-play APIs exist
+  - Plug-and-play architecture is essential for clients who want to retain existing systems (e.g., SAP for materials management)
+
+ Claude Usage and Tooling
+
+- Team already using Claude; encouraged to use Skills/Plugins for more structured outputs
+  - Recommended plugins: Engineering, Web Artifacts Builder, Data, Product Management
+  - Invoke skills with / in the chat prompt
+  - Skills narrow Claude’s focus: e.g., documentation skill filters output to specs and guides only
+- Model selection guidance:
+  - Use faster/lighter models for quick research or code tasks
+  - Use more capable models (Sonnet 5) for complex or layered problems
+  - Match model to the problem to avoid burning tokens unnecessarily
+- Token management tip: start a Claude session at 6:30 AM to extend availability through work hours
+  - Continuous heavy use triggers a 4-hour lockout; early session start prevents mid-day loss
+
+ Next Steps
+
+- Refine module list with weighted scoring
+- Produce a foundational BRD within one week
+- Study the GEM portal
+- Review the help desk module built for GMR
